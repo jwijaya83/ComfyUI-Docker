@@ -14,7 +14,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: "yanwk/comfyui-boot:rocm"
+    image: "jwijaya83/comfyui:rocm"
     ports:
       - "8188:8188"
     volumes:

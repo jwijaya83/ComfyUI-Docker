@@ -3,9 +3,9 @@
 *link:README.zh.adoc[＞💡中文说明点我💡＜]*
 
 This repo is for 
-https://hub.docker.com/r/yanwk/comfyui-boot[Docker images] 
+https://hub.docker.com/r/jwijaya83/comfyui[Docker images] 
 that runs 
-https://github.com/comfyanonymous/ComfyUI[ComfyUI] - 
+https://github.com/jwijaya83/ComfyUI[ComfyUI] - 
 a Stable Diffusion GUI powering node-based workflow.
 
 

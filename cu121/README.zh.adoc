@@ -4,7 +4,7 @@ image::../docs/chart-concept.zh.svg["布局"]
 
 image:https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-cu121.yml/badge.svg["GitHub Workflow Status",link="https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-cu121.yml"]
 
-https://hub.docker.com/repository/docker/yanwk/comfyui-boot/tags?name=cu121[在 <Docker Hub> 上查看]
+https://hub.docker.com/repository/docker/jwijaya83/comfyui/tags?name=cu121[在 <Docker Hub> 上查看]
 
 
 ## 工作流程
@@ -47,14 +47,14 @@ docker run -it \
   -p 8188:8188 \
   -v "$(pwd)"/storage:/home/runner \
   -e CLI_ARGS="" \
-  yanwk/comfyui-boot:latest
+  jwijaya83/comfyui:latest
 ----
 
 [source,sh]
 ----
 # 更新镜像（仅在 Python 组件版本过期时需要）
 docker rm comfyui
-docker pull yanwk/comfyui-boot:latest
+docker pull jwijaya83/comfyui:latest
 # 接下来再运行一遍上述 'docker run' 即可
 ----
 
@@ -101,7 +101,7 @@ docker image prune
 |===
 
 更多 `CLI_ARGS` 参考 
-https://github.com/comfyanonymous/ComfyUI/blob/master/comfy/cli_args.py[ComfyUI] 。
+https://github.com/jwijaya83/ComfyUI/blob/master/comfy/cli_args.py[ComfyUI] 。
 
 
 [[pre-start]]
@@ -237,7 +237,7 @@ https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
 // 简单直接的方式，用 `sudo` 来运行 Podman 就是 rootful 了，使用体验基本和 Docker 一样，就是记得后续操作也要用 "sudo"。
 
 // 此外镜像文件也是下载到 root 用户名下。如果已经用当前 Linux 用户下载了镜像，可以本地复制： +
-// `sudo podman image scp username@localhost::docker.io/yanwk/comfyui-boot:latest`
+// `sudo podman image scp username@localhost::docker.io/jwijaya83/comfyui:latest`
 
 // [source,sh]
 // ----
@@ -250,7 +250,7 @@ https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
 //   -p 8188:8188 \
 //   -v "$(pwd)"/storage:/home/runner \
 //   -e CLI_ARGS="" \
-//   docker.io/yanwk/comfyui-boot
+//   docker.io/jwijaya83/comfyui
 // ----
 // ====
 
@@ -274,7 +274,7 @@ https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
 //   --user root \
 //   --workdir /root \
 //   -e CLI_ARGS="" \
-//   docker.io/yanwk/comfyui-boot:latest \
+//   docker.io/jwijaya83/comfyui:latest \
 //   /bin/bash /home/scripts/root-wrapper.sh
 // ----
 // ====
@@ -289,7 +289,7 @@ https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
 .构建镜像，打印所有日志（不折叠）
 [source,sh]
 ----
-docker build . --progress=plain -f Dockerfile -t yanwk/comfyui-boot:latest
+docker build . --progress=plain -f Dockerfile -t jwijaya83/comfyui:latest
 ----
 
 .运行一个一次性容器
@@ -299,7 +299,7 @@ docker run -it --rm \
   --gpus all -p 8188:8188 \
   --volume "$(pwd)"/storage:/home/runner \
   --env CLI_ARGS="" \
-  yanwk/comfyui-boot:latest
+  jwijaya83/comfyui:latest
 ----
 
 .用 root 身份运行 bash
@@ -310,7 +310,7 @@ docker run -it --rm \
   --volume "$(pwd)"/storage:/home/runner \
   --env CLI_ARGS="" \
   --user root \
-  yanwk/comfyui-boot:latest /bin/bash
+  jwijaya83/comfyui:latest /bin/bash
 ----
 
 .清理缓存文件

@@ -1,6 +1,6 @@
 ################################################################################
-# Dockerfile that builds 'yanwk/comfyui-boot:cu121'
-# A runtime environment for https://github.com/comfyanonymous/ComfyUI
+# Dockerfile that builds 'jwijaya83/comfyui:cu121'
+# A runtime environment for https://github.com/jwijaya83/ComfyUI
 # Using CUDA 12.1& Python 3.11
 ################################################################################
 

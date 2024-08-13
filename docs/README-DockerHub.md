@@ -4,7 +4,7 @@
 
 **[中文文档在 GITHUB 上](https://github.com/YanWenKun/ComfyUI-Docker/blob/main/README.zh.adoc)**
 
-Docker images for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - a Stable Diffusion GUI powering node-based workflow.
+Docker images for [ComfyUI](https://github.com/jwijaya83/ComfyUI) - a Stable Diffusion GUI powering node-based workflow.
 
 ## Quick Start - NVIDIA GPU
 
@@ -17,7 +17,7 @@ docker run -it --rm \
   -p 8188:8188 \
   -v "$(pwd)"/storage:/home/runner \
   -e CLI_ARGS="" \
-  yanwk/comfyui-boot:cu121
+  jwijaya83/comfyui:cu121
 ```
 
 Once the app is loaded, visit http://localhost:8188/

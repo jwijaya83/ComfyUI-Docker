@@ -2,10 +2,10 @@
 
 image:https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-cu121.yml/badge.svg["GitHub Workflow Status",link="https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-cu121.yml"]
 
-https://github.com/comfyanonymous/ComfyUI[ComfyUI]
+https://github.com/jwijaya83/ComfyUI[ComfyUI]
 是一个使用节点工作流的 Stable Diffusion 图形界面。 +
 本仓库所构建的
-https://hub.docker.com/r/yanwk/comfyui-boot[Docker 镜像]
+https://hub.docker.com/r/jwijaya83/comfyui[Docker 镜像]
 包含其依赖项，及下载／启动脚本。
 
 

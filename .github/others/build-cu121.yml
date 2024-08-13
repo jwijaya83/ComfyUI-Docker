@@ -1,19 +1,21 @@
-name: Publish 'comfy3d-pt23' to Docker Hub
+name: Publish 'cu121' to Docker Hub
 
 on: 
   workflow_dispatch: # Can be manually triggered
+  schedule: # Runs on every Monday, 07:00 UTC
+    - cron: '0 7 * * 1'
   push: 
     branches: [ main ]
     paths-ignore:
       - '**'
-      - '!comfy3d-pt23/Dockerfile'
-      - '!comfy3d-pt23/runner-scripts/**'
-      - '!.github/workflows/build-comfy3d-pt23.yml'
+      - '!cu121/Dockerfile'
+      - '!cu121/scripts/**'
+      - '!.github/workflows/build-cu121.yml'
 
 
 jobs:
 
-  build-publish-comfy3d-pt23:
+  build-publish-cu121:
     environment: Publish to Docker Hub
     runs-on: ubuntu-latest
     steps:
@@ -43,12 +45,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_ACCESSTOKEN }}
       -
-        name: Build and push 'comfy3d-pt23'
+        name: Build and push 'cu121'
         uses: docker/build-push-action@v6
         with:
-          context: ./comfy3d-pt23
-          file: ./comfy3d-pt23/Dockerfile
-          tags:  |
-            yanwk/comfyui-boot:comfy3d-pt23
-            yanwk/comfyui-boot:comfy3d-pt23-${{ steps.date.outputs.date }}
+          context: ./cu121
+          file: ./cu121/Dockerfile
+          tags: | 
+            jwijaya83/comfyui:latest
+            jwijaya83/comfyui:cu121
+            jwijaya83/comfyui:cu121-${{ steps.date.outputs.date }}
           push: true

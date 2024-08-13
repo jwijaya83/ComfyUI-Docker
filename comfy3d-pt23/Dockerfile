@@ -1,5 +1,5 @@
 ################################################################################
-# Dockerfile that builds 'yanwk/comfyui-boot:comfy3d-pt23'
+# Dockerfile that builds 'jwijaya83/comfyui:comfy3d-pt23'
 # An environment for running ComfyUI with ComfyUI-3D-Pack.
 # Using PyTorch 2.3, CUDA 12.1, Python 3.11
 # Using Comfy3D Version: https://github.com/MrForExample/ComfyUI-3D-Pack/tree/8c4d127528a9215d23262df722facf519ed80f56

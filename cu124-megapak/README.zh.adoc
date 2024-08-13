@@ -2,7 +2,7 @@
 
 image:https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-cu124-megapak.yml/badge.svg["GitHub Workflow Status",link="https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-cu124-megapak.yml"]
 
-https://hub.docker.com/repository/docker/yanwk/comfyui-boot/tags?name=cu124-megapak[在 <Docker Hub> 上查看]
+https://hub.docker.com/repository/docker/jwijaya83/comfyui/tags?name=cu124-megapak[在 <Docker Hub> 上查看]
 
 
 * 基于 `cu121-megapak` 演进而来
@@ -31,5 +31,5 @@ podman run -it --rm \
   -p 8188:8188 \
   -v "$(pwd)"/storage:/root \
   -e CLI_ARGS="" \
-  docker.io/yanwk/comfyui-boot:cu124-megapak
+  docker.io/jwijaya83/comfyui:cu124-megapak
 ----

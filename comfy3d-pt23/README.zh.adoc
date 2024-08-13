@@ -2,7 +2,7 @@
 
 image:https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-comfy3d-pt23.yml/badge.svg["GitHub Workflow Status",link="https://github.com/YanWenKun/ComfyUI-Docker/actions/workflows/build-comfy3d-pt23.yml"]
 
-https://hub.docker.com/repository/docker/yanwk/comfyui-boot/tags?name=comfy3d-pt23[在 <Docker Hub> 上查看]
+https://hub.docker.com/repository/docker/jwijaya83/comfyui/tags?name=comfy3d-pt23[在 <Docker Hub> 上查看]
 
 
 * 默认仅安装 ComfyUI, ComfyUI-Manager, ComfyUI-3D-Pack
@@ -33,7 +33,7 @@ docker run -it --rm \
   -p 8188:8188 \
   -v "$(pwd)"/storage:/root \
   -e CLI_ARGS="" \
-  yanwk/comfyui-boot:comfy3d-pt23
+  jwijaya83/comfyui:comfy3d-pt23
 ----
 
 .使用 Podman
@@ -48,6 +48,6 @@ podman run -it --rm \
   -p 8188:8188 \
   -v "$(pwd)"/storage:/root \
   -e CLI_ARGS="" \
-  docker.io/yanwk/comfyui-boot:comfy3d-pt23
+  docker.io/jwijaya83/comfyui:comfy3d-pt23
 ----
 
