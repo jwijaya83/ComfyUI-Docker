@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: "yanwk/comfyui-boot:comfy3d-pt22"
+    image: "jwijaya83/comfyui-boot:comfy3d-pt22"
     ports:
       - "8188:8188"
     volumes:
