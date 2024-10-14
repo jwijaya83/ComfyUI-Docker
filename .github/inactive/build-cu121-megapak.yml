@@ -51,7 +51,7 @@ jobs:
           context: ./cu121-megapak
           file: ./cu121-megapak/Dockerfile
           tags:  |
-            yanwk/comfyui-boot:megapak
-            yanwk/comfyui-boot:cu121-megapak
-            yanwk/comfyui-boot:cu121-megapak-${{ steps.date.outputs.date }}
+            jwijaya83/comfyui-boot:megapak
+            jwijaya83/comfyui-boot:cu121-megapak
+            jwijaya83/comfyui-boot:cu121-megapak-${{ steps.date.outputs.date }}
           push: true

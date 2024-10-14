@@ -54,6 +54,6 @@ jobs:
           context: ./rocm
           file: ./rocm/Dockerfile
           tags: |
-            yanwk/comfyui-boot:rocm
-            yanwk/comfyui-boot:rocm-${{ steps.date.outputs.date }}
+            jwijaya83/comfyui-boot:rocm
+            jwijaya83/comfyui-boot:rocm-${{ steps.date.outputs.date }}
           push: true

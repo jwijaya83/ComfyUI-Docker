@@ -51,6 +51,6 @@ jobs:
           context: ./cu124-cn
           file: ./cu124-cn/Dockerfile
           tags:  |
-            yanwk/comfyui-boot:cu124-cn
-            yanwk/comfyui-boot:cu124-cn-${{ steps.date.outputs.date }}
+            jwijaya83/comfyui-boot:cu124-cn
+            jwijaya83/comfyui-boot:cu124-cn-${{ steps.date.outputs.date }}
           push: true

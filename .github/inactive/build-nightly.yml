@@ -55,6 +55,6 @@ jobs:
           context: ./nightly
           file: ./nightly/Dockerfile
           tags:  |
-            yanwk/comfyui-boot:nightly
-            yanwk/comfyui-boot:nightly-${{ steps.date.outputs.date }}-${{ steps.commit.outputs.short }}
+            jwijaya83/comfyui-boot:nightly
+            jwijaya83/comfyui-boot:nightly-${{ steps.date.outputs.date }}-${{ steps.commit.outputs.short }}
           push: true

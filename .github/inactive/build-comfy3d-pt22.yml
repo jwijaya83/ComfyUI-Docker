@@ -49,6 +49,6 @@ jobs:
           context: ./comfy3d-pt22
           file: ./comfy3d-pt22/Dockerfile
           tags:  |
-            yanwk/comfyui-boot:comfy3d-pt22
-            yanwk/comfyui-boot:comfy3d-pt22-${{ steps.date.outputs.date }}
+            jwijaya83/comfyui-boot:comfy3d-pt22
+            jwijaya83/comfyui-boot:comfy3d-pt22-${{ steps.date.outputs.date }}
           push: true
