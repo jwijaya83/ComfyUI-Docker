@@ -1,5 +1,5 @@
 ################################################################################
-# Dockerfile that builds 'yanwk/comfyui-boot:cu124-megapak'
+# Dockerfile that builds 'jwijaya83/comfyui-boot:cu124-megapak'
 # A big all-in-one package with many custom nodes.
 # Using CUDA 12.4, Python 3.12, GCC 13.
 # The container will be running in root (easy for rootless deploy).
