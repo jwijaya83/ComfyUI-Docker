@@ -26,7 +26,7 @@ echo "########################################"
 
 cd /root
 set +e
-git clone https://github.com/comfyanonymous/ComfyUI.git \
+git clone https://github.com/jwijaya83/ComfyUI.git \
     || git -C ComfyUI pull --ff-only
 set -e
 
